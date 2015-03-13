@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# Search your bundle for the provided pattern
+#   Requires bundler 1.8+ for execution as a bundler subcommand.
+#   Examples:
+#     bundle search Kernal.warn
+#     bundle search current_user clearance
+#
+# Arguments:
+#  1. What to search for
+#  2. Which gem names to search (defaults to all gems)
+ag "$1" $(bundle show --paths $2)
