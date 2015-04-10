@@ -2,3 +2,5 @@ log
 tags
 tmp
 .git/
+bower_components/
+node_modules/
