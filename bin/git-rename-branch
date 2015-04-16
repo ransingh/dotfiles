@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -e
+
 old=$(git current-branch)
 git branch -m "$old" "$1"
 git push origin --set-upstream "$1"
