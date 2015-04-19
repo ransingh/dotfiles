@@ -25,3 +25,10 @@
   autosquash = true
 [include]
   path = ~/.gitconfig.local
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
+[user]
+	name = ransingh
+	email = ransingh57@yahoo.com
