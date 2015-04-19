@@ -203,14 +203,10 @@ Thanks
 ------
 
 Thank you, [contributors](https://github.com/thoughtbot/dotfiles/contributors)!
-Also, thank you to Corey Haines, Gary Bernhardt, and others for sharing your
-dotfiles and other shell scripts from which we derived inspiration for items
-in this project.
 
 License
 -------
 
-dotfiles is copyright © 2009-2015 thoughtbot. It is free software, and may be
-redistributed under the terms specified in the [`LICENSE`] file.
+It is free software, and may be redistributed under the terms specified in the [`LICENSE`] file.
 
 [`LICENSE`]: /LICENSE
