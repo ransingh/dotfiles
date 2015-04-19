@@ -17,7 +17,7 @@ begin
   AwesomePrint.irb! if defined? AwesomePrint
 rescue LoadError => le
   puts le
-  puts "# Ensure Brice, AwesomePrint, Hirb, and Looksee for the best irb experience."
+  puts "# Ensure Wirble, AwesomePrint and Looksee for the best irb experience."
   puts "#"
   puts "#   gem install wirble awesome_print looksee"
   puts ""
