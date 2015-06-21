@@ -1,4 +1,6 @@
+
 local _old_path="$PATH"
+
 
 # Local config
 [[ -f ~/.zshenv.local ]] && source ~/.zshenv.local

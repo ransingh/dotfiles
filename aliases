@@ -33,9 +33,10 @@ alias -- -="cd -"
 
 # Shortcuts to Desktop, Dropbox, Downloads, Workspace
 alias d="cd ~/Documents/Dropbox"
+alias doc="cd ~/Documents"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias w="cd ~/Workspace"
+alias rw="cd ~/Documents/ruby-workspace"
 
 # i <3 u cask
 alias cask='brew cask'
