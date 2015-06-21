@@ -37,5 +37,9 @@
 	smudge = git hawser smudge %f
 	required = true
 [user]
-	name = ransingh
-	email = ransingh57@yahoo.com
+	name = Ranbir Singh
+	email = ranbir.singh@urbanise.com
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true

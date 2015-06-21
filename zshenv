@@ -1,3 +1,4 @@
+echo "reading zshenv..."
 # use vim as the visual editor
 export VISUAL=vi
 export EDITOR=$VISUAL
