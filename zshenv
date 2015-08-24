@@ -1,3 +1,4 @@
+echo "reading zshenv..."
 
 local _old_path="$PATH"
 
