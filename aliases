@@ -36,7 +36,7 @@ alias d="cd ~/Documents/Dropbox"
 alias doc="cd ~/Documents"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias rw="cd ~/Documents/ruby-workspace"
+alias proj="cd ~/projects"
 
 # i <3 u cask
 alias cask='brew cask'
