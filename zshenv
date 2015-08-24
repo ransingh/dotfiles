@@ -1,6 +1,6 @@
 echo "reading zshenv..."
 # use vim as the visual editor
-export VISUAL=vi
+export VISUAL=atom
 export EDITOR=$VISUAL
 
 # ensure dotfiles bin directory is loaded first
