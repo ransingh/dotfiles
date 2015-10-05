@@ -54,6 +54,10 @@ alias hosts='sudo $EDITOR /etc/hosts'   # yes I occasionally 127.0.0.1 twitter.c
 #alias gr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
 
 # git
+alias gad="git add"
+alias gdi="git checkout --"
+alias gco="git checkout"
+alias gcb="git checkout -b"
 alias gci="git pull --rebase && rake && git push"
 
 # IP addresses
@@ -85,6 +89,10 @@ alias b="bundle"
 # Rails
 alias migrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
 alias s="rspec"
+
+# jasmine rake tasks
+alias rja="rake jasmine:run"
+alias rjs="rake jasmine:setup"
 
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'

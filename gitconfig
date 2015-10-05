@@ -13,7 +13,7 @@
   pf = push --force-with-lease
   st = status
 [core]
-  excludesfile = ~/.gitignore
+	excludesfile = /Users/ranbir/.gitignore
   autocrlf = input
 [merge]
   ff = only
@@ -31,8 +31,14 @@
 	required = true
 [user]
 	name = Ranbir Singh
-	email = ranbir.singh@urbanise.com
+	email = ranbir.singh@mywave.me
 [filter "lfs"]
 	clean = git lfs clean %f
 	smudge = git lfs smudge %f
 	required = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
