@@ -1,0 +1,7 @@
+# git commit with message without putting quotes
+#
+#   gci  refactored the code to look better
+#   git ci -m "refactored the code to look better"
+function gci() {
+   git commit -m "$*"
+}

@@ -1,0 +1,7 @@
+
+
+# Make directory and change into it.
+
+function sjrnl() {
+  grep $1 -n --color ~/journal/**/*.md
+}
