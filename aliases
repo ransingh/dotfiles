@@ -78,7 +78,7 @@ alias gsp='git stash pop'
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias localip="ipconfig getifaddr en1"
+alias localip="ifconfig getifaddr en1"
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 
 # All the dig info
@@ -89,7 +89,7 @@ alias flush="dscacheutil -flushcache"
 
 # Trim new lines and copy to clipboard
 #alias trimcopy="tr -d '\n' | pbcopy"
-
+  
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
 
@@ -101,6 +101,7 @@ alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; rm -rfv ~/.Trash"
 
 # Bundler
 alias b="bundle"
+alias be="bundle exec"
 
 # Tests and Specs
 alias t="ruby -I test"
@@ -109,6 +110,7 @@ alias t="ruby -I test"
 alias migrate="rake db:migrate db:rollback && rake db:migrate"
 alias m="migrate"
 alias rk="rake"
+alias rkt="rake -T"
 alias s="rspec"
 
 # jasmine rake tasks
