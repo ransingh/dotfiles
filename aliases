@@ -83,6 +83,9 @@ alias gsa='git stash apply'
 alias gsl='git stash list'
 alias gsp='git stash pop'
 
+# git grep
+alias gg='git grep -n $1'
+
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ifconfig getifaddr en1"
@@ -109,13 +112,19 @@ alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; rm -rfv ~/.Trash"
 # Bundler
 alias b="bundle"
 alias be="bundle exec"
+alias rs='be rspec'
+alias cuke='be cucumber'
+alias rc='be rails c'
+alias rs='be rails s'
+alias dbr='rake db:reset'
+alias nodp='bundle --path=.gems --no-deployment'
 
 # Rails
 alias migrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
 alias m="migrate"
 alias rk="rake"
 alias rkt="rake -T"
-alias s="rspec"
+
 
 # jasmine rake tasks
 alias rja="rake jasmine:run"
