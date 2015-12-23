@@ -72,7 +72,7 @@ alias gls='git log --graph --pretty=format:'\''%Cred%h%Creset -%C(yellow)%d%Cres
 # git pull & push
 alias gp='git pull'
 alias gpr='git pull --rebase'
-alias gpws='gss && gpl && gsp'
+alias gpws='gss && gp && gsp'
 alias gprp="git pull --rebase && git push"
 alias gps='git push'
 #alias gpsu='git push -u origin HEAD'
