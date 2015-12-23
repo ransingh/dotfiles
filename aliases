@@ -25,11 +25,12 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Shortcuts to Desktop, Dropbox, Downloads, Workspace
-alias d="cd ~/Documents/Dropbox"
+alias db="cd ~/Documents/Dropbox"
 alias doc="cd ~/Documents"
 alias dl="cd ~/Downloads"
-alias dt="cd ~/Desktop"
+alias dk="cd ~/Desktop"
 alias proj="cd ~/projects"
+alias dot="cd ~/dotfiles"
 
 # i <3 u cask
 alias cask='brew cask'
@@ -46,20 +47,42 @@ alias hosts='sudo $EDITOR /etc/hosts'   # yes I occasionally 127.0.0.1 twitter.c
 # git root
 #alias gr='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
 
-# git
-alias gad="git add"
-alias gdi="git checkout --"
+# git add, checkout
+alias ga="git add"
+alias gcd="git checkout --"
 alias gco="git checkout"
 alias gcb="git checkout -b"
-alias gci="git pull --rebase && rake && git push"
+
+# git diff
+alias gd='git diff --word-diff'
+alias gdc='git diff --cached'
+#alias git='hub'
+
+# git log
+alias gl='git log --name-status'
+alias gls='git log --graph --pretty=format:'\''%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset'\'' --abbrev-commit --date=relative'
+
+# git pull & push
+alias gp='git pull'
+alias gpr='git pull --rebase'
+alias gpws='gss && gpl && gsp'
+alias gprp="git pull --rebase && git push"
+alias gps='git push'
+#alias gpsu='git push -u origin HEAD'
+
+# git stash
+alias gss='git stash'
+alias gsa='git stash apply'
+alias gsl='git stash list'
+alias gsp='git stash pop'
 
 # IP addresses
-#alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-#alias localip="ipconfig getifaddr en1"
-#alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="ipconfig getifaddr en1"
+alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 
 # All the dig info
-#alias dig="dig +nocmd any +multiline +noall +answer"
+alias dig="dig +nocmd any +multiline +noall +answer"
 
 # Flush Directory Service cache
 alias flush="dscacheutil -flushcache"
