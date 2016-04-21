@@ -49,6 +49,7 @@ alias hosts='sudo $EDITOR /etc/hosts'   # yes I occasionally 127.0.0.1 twitter.c
 
 # git add, checkout
 alias ga="git add"
+alias gap="git add -p"
 alias gcd="git checkout --"
 alias gco="git checkout"
 alias gcb="git checkout -b"
@@ -128,6 +129,9 @@ alias rjs="rake jasmine:setup"
 
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'
+
+# Edit alias files
+alias eal="e ~/aliases.local"
 
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local
