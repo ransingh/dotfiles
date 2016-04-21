@@ -137,5 +137,8 @@ alias path='echo $PATH | tr -s ":" "\n"'
 # Edit alias files
 alias eal="e ~/aliases.local"
 
+# Reload dotfiles
+alias rdf="env RCRC=$HOME/dotfiles/rcrc rcup"
+
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local
