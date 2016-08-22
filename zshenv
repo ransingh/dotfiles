@@ -5,6 +5,9 @@ local _old_path="$PATH"
 # set location of dotfile managemnt tool rcrc so that you can run rcup
 export RCRC=$HOME/dotfiles/rcrc
 
+# set the path for pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+
 # Local config
 [[ -f ~/.zshenv.local ]] && source ~/.zshenv.local
 

@@ -6,6 +6,11 @@ if command -v rbenv >/dev/null; then
   eval "$(rbenv init - --no-rehash)"
 fi
 
+# load pyenv if available
+if which pyenv &>/dev/null ; then
+ eval "$(pyenv init -)"
+fi
+
 # mkdir .git/safe in the root of repositories you trust
 PATH=".git/safe/../../bin:$PATH"
 

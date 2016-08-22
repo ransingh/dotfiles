@@ -15,3 +15,8 @@ bindkey "^Y" accept-and-hold
 bindkey "^N" insert-last-word
 bindkey "^Q" push-line-or-edit
 bindkey -s "^T" "^[Isudo ^[A" # "t" for "toughguy"
+
+# my bindings
+bindkey "^[[3~" delete-char       # Delete key
+bindkey "^[[H" beginning-of-line  # Home key
+bindkey "^[[F" end-of-line        # End key
