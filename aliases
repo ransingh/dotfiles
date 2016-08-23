@@ -63,11 +63,11 @@ alias gl='git log --name-status'
 alias gls='git log --graph --pretty=format:'\''%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset'\'' --abbrev-commit --date=relative'
 
 # git pull & push
-alias gp='git pull'
-alias gpr='git pull --rebase'
-alias gpws='gss && gp && gsp'
-alias gprp="git pull --rebase && git push"
+alias gpl='git pull'
 alias gps='git push'
+alias gpr='git pull --rebase'
+alias gpws='gss && gpl && gsp'
+alias gprp="git pull --rebase && git push"
 #alias gpsu='git push -u origin HEAD'
 
 # git stash
