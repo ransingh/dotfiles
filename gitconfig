@@ -16,7 +16,7 @@
 	excludesfile = /Users/ranbir/.gitignore
   autocrlf = input
 [merge]
-  ff = only
+  ff = false
 [commit]
   template = ~/.gitmessage
 [fetch]
