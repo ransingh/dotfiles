@@ -1,4 +1,11 @@
 # Unix
+
+alias ll="ls -al"
+alias ln="ln -v"
+alias mkdir="mkdir -p"
+alias e="$EDITOR"
+alias v="$VISUAL"
+
 alias tlf="tail -f"
 alias ln='ln -v'
 alias mkdir='mkdir -p'
@@ -112,15 +119,11 @@ alias rs='be rails s'
 alias dbr='rake db:reset'
 alias nodp='bundle --path=.gems --no-deployment'
 
-# Tests and Specs
-alias t="ruby -I test"
-
 # Rails
-alias migrate="rake db:migrate db:rollback && rake db:migrate"
+alias migrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
 alias m="migrate"
 alias rk="rake"
 alias rkt="rake -T"
-
 
 # jasmine rake tasks
 alias rja="rake jasmine:run"
