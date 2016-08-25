@@ -56,6 +56,7 @@ alias hosts='sudo $EDITOR /etc/hosts'   # yes I occasionally 127.0.0.1 twitter.c
 
 # git add, checkout
 alias ga="git add"
+alias gap="git add -p"
 alias gcd="git checkout --"
 alias gco="git checkout"
 alias gcb="git checkout -b"
