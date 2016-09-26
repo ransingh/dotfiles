@@ -16,8 +16,6 @@ alias -g G='| grep'
 alias -g M='| less'
 alias -g L='| wc -l'
 alias -g ONE="| awk '{ print \$1}'"
-alias e='$EDITOR'
-alias v='$VISUAL'
 
 # List only directories
 alias lsd='ls -l | grep "^d"'
@@ -31,12 +29,15 @@ alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
-# Shortcuts to Desktop, Dropbox, Downloads, Workspace
+# Shortcuts to Desktop, Dropbox, Downloads, Workspaces
 alias db="cd ~/Documents/Dropbox"
 alias doc="cd ~/Documents"
 alias dl="cd ~/Downloads"
 alias dk="cd ~/Desktop"
 alias proj="cd ~/projects"
+alias goproj="cd ~/projects/go-workspace"
+alias exproj="cd ~/projects/elixir-workspace"
+alias hproj="cd ~/projects/haskell-workspace"
 alias dot="cd ~/dotfiles"
 
 # i <3 u cask
