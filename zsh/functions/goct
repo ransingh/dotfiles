@@ -1,0 +1,15 @@
+# continuously run the go-lang project
+
+function goct() {
+    local project_hash=-1
+    while true; do
+        local new_project_hash="$(find . -type f -print0 | sort -z | xargs -0 shasum | shasum)"
+        if [ "${new_project_hash}" != "${project_hash}" ]; then
+            project_hash="${new_project_hash}"
+            echo "Change detected - executing tests..."
+            go test ./...
+            echo
+        fi
+        sleep 10
+    done
+}

@@ -1,4 +1,11 @@
 # Unix
+
+alias ll="ls -al"
+alias ln="ln -v"
+alias mkdir="mkdir -p"
+alias e="$EDITOR"
+alias v="$VISUAL"
+
 alias tlf="tail -f"
 alias ln='ln -v'
 alias mkdir='mkdir -p'
@@ -9,8 +16,6 @@ alias -g G='| grep'
 alias -g M='| less'
 alias -g L='| wc -l'
 alias -g ONE="| awk '{ print \$1}'"
-alias e='$EDITOR'
-alias v='$VISUAL'
 
 # List only directories
 alias lsd='ls -l | grep "^d"'
@@ -24,12 +29,15 @@ alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
-# Shortcuts to Desktop, Dropbox, Downloads, Workspace
+# Shortcuts to Desktop, Dropbox, Downloads, Workspaces
 alias db="cd ~/Documents/Dropbox"
 alias doc="cd ~/Documents"
 alias dl="cd ~/Downloads"
 alias dk="cd ~/Desktop"
 alias proj="cd ~/projects"
+alias goproj="cd ~/projects/go-workspace"
+alias exproj="cd ~/projects/elixir-workspace"
+alias hproj="cd ~/projects/haskell-workspace"
 alias dot="cd ~/dotfiles"
 
 # i <3 u cask
@@ -64,11 +72,11 @@ alias gl='git log --name-status'
 alias gls='git log --graph --pretty=format:'\''%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset'\'' --abbrev-commit --date=relative'
 
 # git pull & push
-alias gp='git pull'
-alias gpr='git pull --rebase'
-alias gpws='gss && gp && gsp'
-alias gprp="git pull --rebase && git push"
+alias gpl='git pull'
 alias gps='git push'
+alias gpr='git pull --rebase'
+alias gpws='gss && gpl && gsp'
+alias gprp="git pull --rebase && git push"
 #alias gpsu='git push -u origin HEAD'
 
 # git stash
@@ -113,15 +121,11 @@ alias rs='be rails s'
 alias dbr='rake db:reset'
 alias nodp='bundle --path=.gems --no-deployment'
 
-# Tests and Specs
-alias t="ruby -I test"
-
 # Rails
-alias migrate="rake db:migrate db:rollback && rake db:migrate"
+alias migrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
 alias m="migrate"
 alias rk="rake"
 alias rkt="rake -T"
-
 
 # jasmine rake tasks
 alias rja="rake jasmine:run"
@@ -129,12 +133,6 @@ alias rjs="rake jasmine:setup"
 
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'
-
-# Edit alias files
-alias eal="e ~/aliases.local"
-
-# Reload dotfiles
-alias rdf="env RCRC=$HOME/dotfiles/rcrc rcup"
 
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local
