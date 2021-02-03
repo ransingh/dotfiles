@@ -35,7 +35,7 @@ alias doc="cd ~/Documents"
 alias dl="cd ~/Downloads"
 alias dk="cd ~/Desktop"
 alias proj="cd ~/projects"
-alias goproj="cd ~/projects/go-workspace"
+alias goproj="cd ~/go/src"
 alias exproj="cd ~/projects/elixir-workspace"
 alias hproj="cd ~/projects/haskell-workspace"
 alias dot="cd ~/dotfiles"
@@ -61,6 +61,11 @@ alias gap="git add -p"
 alias gcd="git checkout --"
 alias gco="git checkout"
 alias gcb="git checkout -b"
+alias gcom='gco master'
+alias gcomr='gco master && git rebase master'
+alias grhom='git reset --hard origin/master'
+alias gmnf='git merge --no-ff'
+alias gri="git rebase -i"
 
 # git diff
 alias gd='git diff --word-diff'
@@ -124,8 +129,10 @@ alias nodp='bundle --path=.gems --no-deployment'
 # Rails
 alias migrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
 alias m="migrate"
-alias rk="rake"
-alias rkt="rake -T"
+alias rk="be rake"
+alias rkt="rk -T"
+alias rdcm="rk db:drop db:create db:migrate"
+alias rdc="rk db:drop db:create"
 
 # jasmine rake tasks
 alias rja="rake jasmine:run"
@@ -133,6 +140,9 @@ alias rjs="rake jasmine:setup"
 
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'
+
+# count linesof code
+alias loc="git ls-files | grep -v vendor | grep -v bin | grep -v db/geolite2_city.mmdb | grep -v .pdf | grep -v .ttf | grep -v .png | grep -v .jpg | grep -v .svg | grep -v frontend-admin/package-lock.json | tr '\n' '\0'  | xargs -0 wc -l"
 
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local

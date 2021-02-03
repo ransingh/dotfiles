@@ -46,3 +46,6 @@ _load_settings "$HOME/.zsh/configs"
 
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /Users/ranbirsingh/Downloads/vault vault

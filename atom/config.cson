@@ -8,6 +8,7 @@
     projectHome: "/Users/ranbirsingh/projects"
     telemetryConsent: "no"
   editor:
+    fontSize: 15
     showIndentGuide: true
   "exception-reporting":
     userId: "75965846-9445-4d7c-993b-d8efae5ad575"
@@ -17,8 +18,7 @@
     rootPath: "/Users/ranbirsingh/projects"
   "linter-pylint":
     executablePath: "/Users/ranbirsingh/.pyenv/shims/pylint"
-  "linter-ui-default":
-    panelHeight: 183
+  "linter-ui-default": {}
   "platformio-ide-terminal":
     core:
       shell: "/bin/zsh"

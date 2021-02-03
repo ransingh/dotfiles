@@ -1,2 +1,2 @@
-export VISUAL=atom
+export VISUAL=vscode
 export EDITOR=$VISUAL

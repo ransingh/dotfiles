@@ -13,3 +13,5 @@ tmp/**/*
 *.pyc
 .gems
 .bin
+.solargraph.yml
+.vscode/
